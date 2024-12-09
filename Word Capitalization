@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+main()
+{
+    string str,str2;
+    getline(cin,str);
+    //cout<<str;
+    //cout<<str.length();
+    for(int i=0;i<str.length();i++){
+        str[0]=toupper(str[0]);
+    }
+    cout<<str;
+}
