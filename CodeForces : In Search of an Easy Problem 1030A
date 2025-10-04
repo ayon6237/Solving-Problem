@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+main()
+{
+    bool A = false;
+    int persons;
+    cin>>persons;
+
+    int givenanswer[100];
+
+    for(int i=0;i<persons;i++)
+    {
+        int answer;
+        cin>>answer;
+        givenanswer[i] = answer;
+    }
+
+    for(int i =0;i<persons;i++)
+    {
+        if(givenanswer[i]==1)
+        {
+            A = true;
+        }
+    }
+    if(A==true)
+    {
+        cout<<"HARD";
+    }else{
+        cout<<"EASY";
+    }
+
+    return 0;
+}
