@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+main()
+{
+    int stopes;
+    cin>>stopes;
+
+    int exit,entry;
+    int current =0,maxCapacity = 0;
+
+    for(int i=0;i<stopes;i++)
+    {
+        cin>>exit>>entry;
+        current = current - exit + entry;
+
+        if(current > maxCapacity)
+        {
+            maxCapacity = current;
+        }
+    }
+
+
+    cout<<maxCapacity;
+
+
+    return 0;
+}
