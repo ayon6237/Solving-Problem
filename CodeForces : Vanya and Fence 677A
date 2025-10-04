@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+main()
+{
+    int friendsNumber,fenceheight,width=0;
+    int friendHeight[1005];
+    cin>>friendsNumber>>fenceheight;
+ 
+ 
+    for(int i=0;i<friendsNumber;i++)
+    {
+        cin>>friendHeight[i];
+    }
+    for(int i=0;i<friendsNumber;i++)
+    {
+        if(friendHeight[i]<=fenceheight)
+        {
+            width = width + 1;
+        }
+        else
+        {
+            width = width + 2;
+        }
+    }
+    cout<<endl<<width;
+ 
+ 
+ 
+    return 0;
+}
