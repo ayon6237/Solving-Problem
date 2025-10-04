@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int countFreeRoom = 0;
+    int roomno;
+    cin >> roomno;
+
+    int presentPeople[roomno];
+    int roomCapacity[roomno];
+
+    // ইনপুট নেওয়া
+    for(int i = 0; i < roomno; i++)
+    {
+        cin >> presentPeople[i] >> roomCapacity[i];
+    }
+
+    // চেক করা কতগুলো রুমে জায়গা খালি আছে
+    for(int i = 0; i < roomno; i++)
+    {
+        if(roomCapacity[i] - presentPeople[i] >= 2)
+        {
+            countFreeRoom++;
+        }
+    }
+
+    cout << countFreeRoom;
+    return 0;
+}
